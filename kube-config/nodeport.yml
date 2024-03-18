@@ -1,0 +1,10 @@
+apiVersion: v1к
+kind: Service
+metadata:
+  name: short-app
+spec:
+  type: NodePort
+  ports:
+  - port: 3000
+    targetPort: 80
+    nodePort: 31200
