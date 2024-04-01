@@ -1,4 +1,4 @@
-apiVersion: v1к
+apiVersion: v1
 kind: Service
 metadata:
   name: short-app-port
