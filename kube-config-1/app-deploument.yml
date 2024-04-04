@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myappshort-app-deployment
+  name: short-app-deployment
 spec:
   replicas: 1
   selector: 
-    matchLables: 
-      conponents: frontend
+    matchLabels: 
+      components: frontend
   template:
     metadata: 
       labels:
