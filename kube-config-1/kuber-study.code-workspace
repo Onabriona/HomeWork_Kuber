@@ -1,0 +1,11 @@
+{
+    "folders": [
+        {
+            "path": "../kube-config"
+        },
+        {
+            "name": "SSH FS - kuber",
+            "uri": "ssh://kuber/"
+        }
+    ]
+}
