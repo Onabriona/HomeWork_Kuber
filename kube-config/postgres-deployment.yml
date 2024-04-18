@@ -14,7 +14,7 @@ spec:
     spec: 
       containers:
         - name: postgres-app
-          image:  antonlarichev/conv-app:1.2
+          image:  postgres:16
           ports:
             - containerPort: 80
           env:
@@ -28,3 +28,11 @@ spec:
             limits:
               memory: "300Mi"
               cpu:  "500m"
+          volumeMounts:
+            - name: postgres-data
+              mountPath: /var/lib/postgresql/data
+              subPath: postgres
+      volumes:
+        - name: postgres-data
+          persistentVolumeClaim:
+            claimName: postgres-pvc
