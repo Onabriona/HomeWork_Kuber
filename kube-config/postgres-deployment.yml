@@ -16,7 +16,7 @@ spec:
         - name: postgres-app
           image:  postgres:16
           ports:
-            - containerPort: 80
+            - containerPort: 5432
           env:
             - name: POSTGRES_DB
               value: demo
